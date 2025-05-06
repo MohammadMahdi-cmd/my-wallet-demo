@@ -17,7 +17,7 @@
                     <h1 class="font-bold text-3xl">$ <span id="main-balance">4500</span></h1>
                     <p class="font-bold text-lg">Available Balance</p>
                 </div>
-                <button class="font-extrabold text-base btn rounded-lg">Log Out</button>
+                <button id="logout-btn" class="font-extrabold text-base btn rounded-lg">Log Out</button>
             </nav>
             <section class="px-5 grid gap-2">
                 <h1 class="font-bold text-3xl">🔥 Welcome to Payooo!</h1>
@@ -48,10 +48,10 @@
                         <h3 class="font-bold text-sm">Transactions</h3>
                     </div>
                 </div>
-                <!-- add money section  -->
-                <section  id="add-money">
+                <!-- Add Money Section -->
+                <section id="add-money-section">
                     <h2 class="my-8 font-bold text-xl">Add Money</h2>
-                    <div class="card   max-w-sm shrink-0 shadow-2xl mx-auto">
+                    <div class="card max-w-sm shrink-0 shadow-2xl mx-auto">
                         <form class="card-body">
                             <fieldset class="fieldset flex flex-col space-y-2">
                                 <label class="label font-bold ">Select Bank</label>
@@ -59,23 +59,23 @@
                                     <option disabled selected>Select Bank</option>
                                     <option value="bkash">Bkash</option>
                                     <option value="nogod">Nogod</option>
-                                    <option class="DBBL">DBBL</option>
+                                    <option value="DBBL">DBBL</option>
                                 </select>
                                 <label class="label font-bold ">Bank Account Number</label>
                                 <input id="account-number" type="number" class="input rounded-xl" placeholder="Enter 11 digit account number" required />
                                 <label class="label font-bold">Amount to Add</label>
-                                <input id="amount" type="number" class="input rounded-xl" placeholder="Your Amount" required />
+                                <input id="amount-add" type="number" class="input rounded-xl" placeholder="Your Amount" required />
                                 <label class="label font-bold">Pin Number</label>
-                                <input id="PIN" type="password" class="input rounded-xl" placeholder="Enter 4 digit pin number" required />
-                                <button id="add-money" id="login-btn" class="btn btn-neutral bg-blue-500 mt-4">Add Money</button>
+                                <input id="PIN-add" type="password" class="input rounded-xl" placeholder="Enter 4 digit pin number (1234)" required />
+                                <button id="add-money-btn" class="btn btn-neutral bg-blue-500 mt-4">Add Money</button>
                             </fieldset>
                         </form>
                     </div>
                 </section>
-                <!-- Cash Out Section  -->
-                 <section id="cashout" class="mx-10">
-                    <h2 class="text-3xl font-bold text-blue-500 mx-auto mt-10 mb-5 text-center">Cash Out</h2>    
-                    <div class="card   max-w-sm shrink-0 shadow-2xl">
+                <!-- Cash Out Section -->
+                <section id="cashout-section" class="mx-10">
+                    <h2 class="text-3xl font-bold text-blue-500 mx-auto mt-10 mb-5 text-center">Cash Out</h2>
+                    <div class="card max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <fieldset class="fieldset flex flex-col space-y-2">
                                 <label class="label font-bold ">Select Bank</label>
@@ -83,22 +83,23 @@
                                     <option disabled selected>Select Bank</option>
                                     <option value="bkash">Bkash</option>
                                     <option value="nogod">Nogod</option>
-                                    <option class="DBBL">DBBL</option>
+                                    <option value="DBBL">DBBL</option>
                                 </select>
                                 <label class="label font-bold ">Bank Account Number</label>
-                                <input id="account-number" type="number" class="input rounded-xl" placeholder="Enter 11 digit account number" required />
-                                <label class="label font-bold">Amount to Add</label>
-                                <input id="amount" type="number" class="input rounded-xl" placeholder="Amount for Cashout" required/>
+                                <input id="account-number-cashout" type="number" class="input rounded-xl" placeholder="Enter 11 digit account number" required />
+                                <label class="label font-bold">Amount to Cashout</label>
+                                <input id="amount-cashout" type="number" class="input rounded-xl" placeholder="Amount for Cashout" required />
                                 <label class="label font-bold">Pin Number</label>
-                                <input id="PIN" type="password" class="input rounded-xl" placeholder="Enter 4 digit pin number" required />
-                                <button id="cashout-btn"class="btn btn-neutral bg-blue-500 mt-4">Cashout</button>
+                                <input id="PIN-cashout" type="password" class="input rounded-xl" placeholder="Enter 4 digit pin number (1234)" required />
+                                <button id="cashout-btn" class="btn btn-neutral bg-blue-500 mt-4">Cashout</button>
                             </fieldset>
                         </form>
                     </div>
-                 </section>
+                </section>
             </section>
         </header>
     </section>
+    <script src="../JS/logout.js"></script>
     <script src="../JS/addMoney.js"></script>
     <script src="../JS/toogle.js"></script>
     <script src="../JS/cashout.js"></script>

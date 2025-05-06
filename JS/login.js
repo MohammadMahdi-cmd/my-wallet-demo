@@ -1,4 +1,3 @@
-// Step 1 = ID k dhorsi getelementbyId diye
 document.getElementById("login-btn").addEventListener('click',
     function(event){
         event.preventDefault();
@@ -6,7 +5,7 @@ document.getElementById("login-btn").addEventListener('click',
         const pin = document.getElementById("PIN").value
         if(accountNumber.length === 11){
             if(pin.length === 4){
-                window.location.href = "./main.html"
+                window.location.href = "../HTML/main.html"
             }
             else{
                 console.log("invalid PIN number")
