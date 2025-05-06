@@ -5,7 +5,7 @@ document.getElementById("login-btn").addEventListener('click',
         const pin = document.getElementById("PIN").value
         if(accountNumber.length === 11){
             if(pin.length === 4){
-                window.location.href = "../HTML/main.html"
+                window.location.href = "./main.html"
             }
             else{
                 console.log("invalid PIN number")
